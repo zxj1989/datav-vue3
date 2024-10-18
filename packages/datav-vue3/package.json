@@ -1,9 +1,9 @@
 {
-  "name": "@kjgl77/datav-vue3",
-  "version": "1.7.3",
+  "name": "@jimmy-zhu/datav-vue3",
+  "version": "2.0.1",
   "description": "Datav for vue3+vite",
   "packageManager": "pnpm@9.1.2",
-  "author": "kjgl77 <745385015@qq.com>",
+  "author": "jimmy <254325310@qq.com>",
   "license": "MIT",
   "keywords": [
     "vue",
@@ -12,7 +12,7 @@
     "data-view",
     "data-view vue3"
   ],
-  "homepage": "https://github.com/vaemusic/datav-vue3",
+  "homepage": "https://github.com/zxj1989/datav-vue3",
   "main": "./dist/datav-vue3.es.js",
   "module": "./dist/datav-vue3.es.js",
   "types": "./dist/index.d.ts",
@@ -56,9 +56,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vaemusic/datav-vue3.git"
+    "url": "git+https://github.com/zxj1989/datav-vue3.git"
   },
   "bugs": {
-    "url": "https://github.com/vaemusic/datav-vue3/issues"
+    "url": "https://github.com/zxj1989/datav-vue3/issues"
   }
 }

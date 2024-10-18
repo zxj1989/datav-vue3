@@ -1,7 +1,7 @@
 <template>
   <div w50rem h24rem p3 flex="~ col" justify-center items-center bg-dark>
     <div>
-      <dv-scroll-ranking-board :config="config" style="width:500px;height:300px" />
+      <dv-scroll-ranking-board :config="config" :onItemClick="handleClick" style="width:500px;height:300px" />
     </div>
     <div pt5>
       <button btn @click="addData">
@@ -50,5 +50,9 @@ const addData = () => {
     name: `新增城市${Math.floor(Math.random() * 100)}`,
     value: Math.floor(Math.random() * 100),
   })
+}
+
+function handleClick(item, index) {
+  console.log('Clicked item:', item, 'at index:', index);
 }
 </script>

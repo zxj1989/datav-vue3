@@ -5,6 +5,7 @@
       :key="item.toString() + item.scroll"
       class="row-item"
       :style="`height: ${state.heights[i]}px;`"
+      @click="handleItemClick(item, i)"
     >
       <div class="ranking-info">
         <div class="rank">
@@ -37,6 +38,10 @@ const props = defineProps({
   config: {
     type: Object,
     default: () => ({}),
+  },
+  onItemClick: {
+    type: Function,
+    default: null,
   },
 })
 
@@ -275,6 +280,12 @@ function stopAnimation() {
     return
 
   clearTimeout(state.animationHandler)
+}
+
+function handleItemClick(item, index) {
+  if (props.onItemClick) {
+    props.onItemClick(item, index)
+  }
 }
 </script>
 
